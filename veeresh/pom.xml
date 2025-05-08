@@ -3,6 +3,28 @@
   <groupId>veeresh</groupId>
   <artifactId>veeresh</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  
+  
+  <dependencies>
+  
+  
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.30.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.10.2</version>
+    <scope>test</scope>
+</dependency>
+  </dependencies>
+  <profiles>
+  <profile>
+<id>RT</id>
   <build>
   <plugins>
     
@@ -16,7 +38,15 @@
           </suiteXmlFiles>
         </configuration>
       </plugin>
+      
+   
    
 </plugins>
-  </build>
+
+
+</build>
+</profile>
+</profiles>
+
+  
 </project>
